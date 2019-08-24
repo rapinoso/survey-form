@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primavera Sound Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1 id="title">Primavera Sound 2018 Survey Form</h1>
+<form id="survey-form">
+  <p id="description">Let us know how to improve your festival experience for the future</p>
+  <ul class="flex-outer">
+      <li>
+        <label for="name" id="name-label">*Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </li>
+      <li>
+        <label for="email" id="email-label">*Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>  
+      </li>
+      <li>
+        <label for="number" id="number-label">*Age</label>
+        <input type="number" id="number" placeholder="Age" min="16" max="99" required>  
+      </li>
+      <li>
+        <label for="dropdown">Which festival did you attend this year?</label>
+        <select id="dropdown" name="festival">
+          <option value="porto">Nos Primavera Sound</option>
+          <option value="barcelona">Primavera Sound Barcelona</option>
+        </select>
+        
+      </li>
+      <li>
+        <p>*How likely is that you would recommend the festival to a friend?</p>
+        <ul class="flex-inner" id="userRatings">
+          <li>
+            <input type="radio" value="1" name="ratings">
+            <label for="1">Definitely</label>
+          </li>
+          <li>
+            <input type="radio" value="2" name="ratings">
+            <label for="2">Maybe</label>
+          </li>
+          <li>
+            <input type="radio" value="3" name="ratings">
+            <label for="3">Not sure</label>
+          </li>
+         </ul>
+      </li>
+      <li>
+        <p>Please check the stages you liked the most:</p>
+         <ul class="flex-inner" id="stages">
+          <li>
+            <input type="checkbox" value="1" name="mango">
+            <label for="mango">Mango</label> 
+          </li>
+          <li>
+            <input type="checkbox" value="2" name="seat">
+            <label for="seat">Seat</label>
+          </li>
+          <li>
+            <input type="checkbox" value="3" name="ray-ban">
+            <label for="ray-ban">Ray-Ban</label>
+          </li>
+          <li>
+            <input type="checkbox" value="4" name="apple">
+            <label for="apple">Apple</label>
+          </li>
+          <li>
+            <input type="checkbox" value="5" name="heineken">
+            <label for="heineken">Heineken</label>
+          </li>
+          <li>
+            <input type="checkbox" value="6" name="pitchfork">
+            <label for="pitchfork">Pitchfork</label>
+          </li>
+          </ul>
+      </li>
+      <li>
+        <label for="comments">Any comments or suggestions?</label>
+      <textarea rows="6" name="comments" placeholder="Enter your comments here..."></textarea> 
+      </li>
+      <li>
+        <button id="submit" type="submit" >Submit</button>
+      </li>
+  </ul>
+</form>
+  <p id="ref">**This is just a fake form created for FreeCodeCamp based on this <a href="https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767" target="_blank">example</a>.</p>
+</div>
+</body>
+</html>

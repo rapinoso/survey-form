@@ -1,0 +1,132 @@
+body, html {
+    height: 100%;
+  }
+  
+  body {
+    background-image: url("https://www.primavera-hostel.com/wp-content/uploads/2018/02/PSP18_IMATGE_PS_20171109115325.png");
+  font-family: Helvetica, sans-serif;
+  }
+  
+  .container *{
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align:center;
+    margin:0;
+    font-family: helvetica;
+    color: gold;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  #description {
+    text-align:center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  
+  .container {
+    width: 60%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: LightSeaGreen;
+    color: #FFF;
+    padding: 50px;
+    border-radius: 0.5em;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-outer>li>label, 
+  .flex-outer>li>p {
+    flex: 1 0 120px;
+    max-width: 220px;
+    
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: tomato;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 0.5em;
+  }
+  
+  .flex-inner li {
+    width: 200px;
+  }
+  
+  .flex-inner {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 12px 12px 12px 0;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+   }
+  
+  .flex-inner li label {
+    padding: 12px;
+  }
+  
+  
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 0.3em;
+  }
+  
+  .flex-outer li input[type=text],
+  .flex-outer li input[type=email],
+  .flex-outer li input[type=number],
+  .flex-outer li textarea,
+  .flex-outer li select {
+    max-width: 600px;
+    margin-left:auto;
+    font-size: 16px;
+  }
+  
+  #userRatings, #stages {
+    margin-left:auto;
+    max-width: 600px;
+  }
+  
+  #ref {
+    text-align: center;
+  }
+  
+  #ref a {
+    text-decoration: none;
+    color: #1A5276;
+    font-weight: 800; 
+  }
